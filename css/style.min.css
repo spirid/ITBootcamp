@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+    .passportImg{
+        padding-right: 0px;
+    } 
+    
+    .pagination{
+        flex-wrap: wrap;
+        margin: 3em 0 0 0;
+    }
+
+    .modalContent{
+        text-align: center;
+        padding: 10px 0;
+        place-items: center;
+        grid-template-areas:
+        "img img"
+        "img img"
+        "img img"
+        "name passportOrigin"
+        "nameValue passportOriginValue"
+        "passportStatus passportLocation"
+        "passportStatusValue passportLocationValue"
+        "passportSpecies passportGender"
+        "passportSpeciesValue passportGenderValue";
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    body{
+        min-width: 275px;
+    }
+    
+    .cardContainer{
+        width: 100%;
+    }    
+    div.passportImg > img{
+        width: 180px;
+    }
+
+    div.cards img{
+        width: 180px;
+        border-radius: 50%;
+    }
+
+}

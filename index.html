@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&M Cards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</script>
+</head>
+<body>
+  <label class="switch">
+    <span class="switchText">Pagination</span>
+    <input type="checkbox" onclick="toggle(this);">
+    <div class="slider"></div>
+  </label>
+
+  <div class="pagination" style="display: none;">
+    <button id="prev">&lt;</button>
+    <button id="next">&gt;</button>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modalContent">
+        <div class="passportImg"><img src="" alt=""></div>
+        <div class="passportName">Name:</div>
+        <div class="passport_Name"></div>
+        <div class="passportOrigin">Origin:</div>
+        <div class="passport_Origin"></div>
+        <div class="passportStatus">Status:</div>
+        <div class="passport_Status"></div>
+        <div class="passportLocation">Location:</div>
+        <div class="passport_Location"></div>
+        <div class="passportSpecies">Species:</div>
+        <div class="passport_Species"></div>
+        <div class="passportGender">Gender:</div>
+        <div class="passport_Gender"></div>  
+        </div>
+      </div>
+    </div> 
+  </div>
+      
+    <div class="cards"></div>
+    <div class="cardInfo"></div>
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <a href="#" id="scroll_top">To top</a>
+</body>
+</html>
